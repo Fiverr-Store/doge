@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title> ALPHAGANG - MINT </title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png" />
+
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/animate.css" />
+  <link rel="stylesheet" href="assets/css/LineIcons.3.0.css" />
+  <link rel="stylesheet" href="assets/css/main.css?v=18" />
+</head>
+<body>
+  <!--[if lte IE 9]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+
+
+  <header class="header">
+    <div class="navbar-area">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-12">
+            <nav class="navbar navbar-expand-lg">
+              <a class="navbar-brand" href="/">
+                <!-- <img src="assets/img/logo/logo.png" alt="logo"> -->
+                ALPHA<span>GANG</span>
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                <ul id="nav" class="navbar-nav nav-center">
+                  <li class="nav-item">
+                    <a  href="index.html#overview">Overview</a>
+                  </li>
+                  <li class="nav-item">
+                    <a  href="index.html#roadmap">Roadmap</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="index.html#faqs">FAQ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#!">Twitter</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="mint.html" class="active" >Mint</a>
+                  </li>
+                </ul>
+                <ul id="nav" class="navbar-nav ms-auto social">
+
+                  <li>
+                    <a href="#!"  class="btn-connect-2">
+                      <span> Connect Now </span>
+                    </a>
+                  </li>
+
+                </ul>
+              </div>
+
+            </nav>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+
+
+  <!-- ======= hero area ======= -->
+  <section class="hero-mint">
+
+    <div class="container">
+      <div class="herro-inner">
+        <div class="row gy-4 gx-5 align-items-center">
+
+          <div class="col-lg-6">
+            <div class="hero-img wow fadeInDown" data-wow-delay="0.4s" >
+              <img src="assets/img/about/abt.jpg" alt="">
+            </div><!-- /.hero-img -->
+          </div><!-- /.col-lg-6 -->
+
+          <div class="col-lg-6">
+            <div class="hero-text">
+              <h1 class="wow fadeInUp" data-wow-delay="0.4s" > ALPHAGANG </h1>
+              <h3 class="wow fadeInUp" data-wow-delay="0.4s"> SUPPLY: 0/7777 </h3>
+              <p class="wow fadeInUp" data-wow-delay="0.5s">
+                Sadboyz is a collection of 7,777 unique Sadboyz wandering around the Ethereum network.
+              </p>
+              <div class="form-con wow fadeInUp" data-wow-delay="0.5s" >
+
+                  <input type="text" id="counting" readonly class="form-control value" max="2" value="1">
+
+                  <button class="btn-mint"> Mint </button>
+
+                  <div class="counter-btns">
+                    <button class="counter-btn"  onclick="increment()">  <i class="lni lni-chevron-up" ></i> </button>
+                    <button class="counter-btn" onclick="decrement()"> <i class="lni lni-chevron-down" ></i> </button>
+                  </div><!-- /.counter-btns -->
+
+              </div><!-- /.form-con -->
+            </div><!-- /.hero-text -->
+          </div><!-- /.col-lg-6 -->
+
+        </div><!-- /.row -->
+      </div><!-- /.herro-inner -->
+    </div><!-- /.contaier -->
+
+  </section><!-- /.hero-home -->
+  <!-- ======= hero area end ======= -->
+
+
+
+
+
+  <footer>
+    <div class="cotainer">
+      <div class="footer-links">
+
+        <ul>
+
+           <li>
+            <a href="https://twitter.com/AlphaGangX" target="_blank">
+             <i class="lni lni-twitter" ></i>
+           </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/AlphaGangX" target="_blank">
+             <i class="lni lni-discord" ></i>
+           </a>
+          </li>
+        </ul>
+
+      </div><!-- /.footer-links -->
+      <span> 2022 - AlphaGang </span>
+    </div><!-- /.cotainer -->
+  </footer>
+
+  <a href="#" class="scroll-top btn-hover">
+    <img src="assets/img/logo/chev.svg" alt="chev">
+  </a>
+
+
+  <div class="page-loader">
+    <div class="lds-dual-ring"></div>
+  </div><!-- /.page-loader -->
+
+
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/wow.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    //initialising a variable name data
+    var data = 1;
+
+    //printing default value of data that is 0 in h2 tag
+    document.getElementById("counting").value = data;
+
+    //creation of increment function
+    function increment() {
+      data = data + 1;
+      document.getElementById("counting").value = data;
+    }
+    //creation of decrement function
+    function decrement() {
+      data = data - 1;
+      document.getElementById("counting").value = data;
+    }
+    function mintPress() {
+      console.log(data);
+    }
+  </script>
+
+</body>
+
+
+</html>
