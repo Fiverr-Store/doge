@@ -1365,7 +1365,7 @@ footer .footer-links ul li a:hover {
     -webkit-transform: translate(0px, -50px);
   }
   100% {
-    -webkit-transform: translate(0px, 650px);
+    -webkit-transform: translate(0px, 850px);
   }
 }
 @-webkit-keyframes clockwiseSpin {
