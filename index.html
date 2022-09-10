@@ -12,7 +12,8 @@
 
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
   <link rel="stylesheet" href="assets/css/LineIcons.3.0.css" />
-  <link rel="stylesheet" href="assets/css/main.css?v=12" />
+  <link rel="stylesheet" href="assets/css/animate.css" />
+  <link rel="stylesheet" href="assets/css/main.css?v=121" />
 </head>
 <body>
   <!--[if lte IE 9]>
@@ -90,27 +91,7 @@
       </div><!-- /.hero-inner -->
     </div><!-- /.container -->
 
-    <div id="money">
-      <div class="bill b1"></div>
-      <div class="bill b2"></div>
-      <div class="bill b3"></div>
-      <div class="bill b4"></div>
-      <div class="bill b5"></div>
-      <div class="bill b6"></div>
-      <div class="bill b7"></div>
-      <div class="bill b8"></div>
-      <div class="bill b9"></div>
-      <div class="bill b10"></div>
-      <div class="bill b11"></div>
-      <div class="bill b12"></div>
-      <div class="bill b13"></div>
-      <div class="bill b14"></div>
-      <div class="bill b15"></div>
-      <div class="bill b16"></div>
-      <div class="bill b17"></div>
-      <div class="bill b18"></div>
-      <div class="bill b19"></div>
-    </div>
+    <div class="moneybox" id="leafContainer"></div>
 
   </section><!-- /.hero-area -->
 
@@ -372,7 +353,7 @@
 
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
-
+  <script>      const NUMBER_OF_LEAVES = 15; const width = window.screen.width; function init() { var container = document.getElementById('leafContainer'); for (var i = 0; i < NUMBER_OF_LEAVES; i++) { container.appendChild(createALeaf()); } } function randomInteger(low, high) { return low + Math.floor(Math.random() * (high - low)); } function randomFloat(low, high) { return low + Math.random() * (high - low); } function pixelValue(value) { return value + 'px'; } function durationValue(value) { return value + 's'; } function createALeaf() { var leafDiv = document.createElement('div'); var image = document.createElement('img'); image.src = 'assets/img/cash' + randomInteger(3, 7) + '.png'; leafDiv.style.top = "-100px"; leafDiv.style.left = pixelValue(randomInteger(0, width)); var spinAnimationName = (Math.random() < 0.5) ? 'clockwiseSpin' : 'counterclockwiseSpinAndFlip'; leafDiv.style.webkitAnimationName = 'fade, drop'; image.style.webkitAnimationName = spinAnimationName; var fadeAndDropDuration = durationValue(randomFloat(3, 9)); var spinDuration = durationValue(randomFloat(3, 7)); leafDiv.style.webkitAnimationDuration = fadeAndDropDuration + ', ' + fadeAndDropDuration; var leafDelay = durationValue(randomFloat(0, 0)); leafDiv.style.webkitAnimationDelay = leafDelay + ', ' + leafDelay; image.style.webkitAnimationDuration = spinDuration; leafDiv.appendChild(image); return leafDiv; } window.addEventListener('load', init, false);</script>
 </body>
 
 
