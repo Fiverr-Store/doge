@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
   <link rel="stylesheet" href="assets/css/LineIcons.3.0.css" />
   <link rel="stylesheet" href="assets/css/animate.css" />
-  <link rel="stylesheet" href="assets/css/main.css?v=121" />
+  <link rel="stylesheet" href="assets/css/main.css?v=187" />
 </head>
 <body>
   <!--[if lte IE 9]>
@@ -96,12 +96,12 @@
   </section><!-- /.hero-area -->
 
 
-  <section id="overview" class="overview section-padding">
+  <section id="overview" class="overview ">
 
-    <div class="container">
+    <div class="container section-padding">
       <div class="row justify-content-between align-items-center">
         <div class="col-lg-6">
-          <div class="over-t">
+          <div class="over-t wow fadeInLeft" data-wow-delay=".4s">
             <h2> What is Dogecoin? </h2>
             <p class="lead"> An open-source peer-to-peer digital currency, favoured by <span> John Doe </span> </p>
             <p>
@@ -114,13 +114,109 @@
           </div><!-- /.over-t -->
         </div><!-- /.col-lg-6 -->
         <div class="col-lg-6">
+         <div class="wow fadeInRight" data-wow-delay=".5s">
           <img src="assets/img/hero/2.png" class="img-fluid" alt="">
+         </div>
         </div><!-- /.col-lg-5 -->
       </div><!-- /.row -->
     </div><!-- /.container -->
 
 
   </section><!-- /.arts -->
+
+  <section class="token-mic token-mics">
+    <div class="container section-padding">
+
+      <div class="sec-title wow fadeInUp" data-wow-delay=".4s">
+        <h2>Tokenomics</h2>
+        <h3 class="total"> Initial Total Supply <br> 1,000,000,000,000 </h3>
+      </div><!-- /.sec-title -->
+
+      <div class="row justify-content-center">
+        <div class="col-lg-7">
+          <canvas id="chart1"></canvas>
+        </div><!-- /.col-lg-7 -->
+      </div><!-- /.row -->
+
+      <div class="chart-list">
+        <div class="containerd">
+
+          <div class="chart-wrap">
+
+            <div class="chart-point wow fadeInDown" data-wow-delay=".5s">
+              <span class="yellow"> </span>
+              <p> Migration Bridge </p>
+              <h2> 550,946,836,008 </h2>
+            </div><!-- /.chart-point -->
+
+            <div class="chart-point wow fadeInDown" data-wow-delay=".5s">
+              <span class="purple"> </span>
+              <p> Game Liquidity <br> (Locked) </p>
+              <h2> 150,000,000,000 </h2>
+            </div><!-- /.chart-point -->
+
+            <div class="chart-point wow fadeInDown" data-wow-delay=".5s">
+              <span class="red"> </span>
+              <p> Burnt </p>
+              <h2> 106,218,745,546</h2>
+            </div><!-- /.chart-point -->
+
+            <div class="chart-point wow fadeInDown" data-wow-delay=".5s">
+              <span class="orange"> </span>
+              <p> Staking Rewards </p>
+              <h2> 75,000,000,000 </h2>
+            </div><!-- /.chart-point -->
+
+            <div class="chart-point wow fadeInDown" data-wow-delay=".5s">
+              <span class="green"> </span>
+              <p> BSC Liquidity </p>
+              <h2> 46,140,713,798 </h2>
+            </div><!-- /.chart-point -->
+
+            <div class="chart-point wow fadeInDown" data-wow-delay=".5s">
+              <span class="lady"> </span>
+              <p> ETH Liquidity </p>
+              <h2> 44,643,488,679 </h2>
+            </div><!-- /.chart-point -->
+
+
+            <div class="chart-point wow fadeInDown" data-wow-delay=".5s">
+              <span class="blue"> </span>
+              <p> FTM Liquidity </p>
+              <h2> 9,175,812,571 </h2>
+            </div><!-- /.chart-point -->
+
+
+            <div class="chart-point wow fadeInDown" data-wow-delay=".5s">
+              <span class="penut"> </span>
+              <p> MATIC Liquidity </p>
+              <h2> 9,168,485,010 </h2>
+            </div><!-- /.chart-point -->
+
+
+            <div class="chart-point wow fadeInDown" data-wow-delay=".5s">
+              <span class="light-b"> </span>
+              <p> AVAX Liquidity </p>
+              <h2> 8,705,918,388 </h2>
+            </div><!-- /.chart-point -->
+
+          </div><!-- /.chart-wrap -->
+
+
+
+          <p class="mt-3 text-center text-dark wow fadeIn" data-wow-delay=".5s">
+            If you hold Parabolic tokens from our BSC November 2021 launch, please CLICK <a
+              href="https://migrate.parabolictoken.com " target="_blank">HERE</a> to migrate and upgrade your tokens
+          </p>
+
+        </div><!-- /.container -->
+      </div><!-- /.chart-list -->
+
+    </div><!-- /.container -->
+
+
+  </section><!-- /.token-mic -->
+
 
 
   <section id="roadmap" class=" roadmap-section section-padding">
@@ -350,10 +446,95 @@
   </div><!-- /.page-loader -->
 
 
-
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/wow.min.js"></script>
+  <script src="assets/js/chart.min.js"></script>
   <script src="assets/js/main.js"></script>
-  <script>      const NUMBER_OF_LEAVES = 15; const width = window.screen.width; function init() { var container = document.getElementById('leafContainer'); for (var i = 0; i < NUMBER_OF_LEAVES; i++) { container.appendChild(createALeaf()); } } function randomInteger(low, high) { return low + Math.floor(Math.random() * (high - low)); } function randomFloat(low, high) { return low + Math.random() * (high - low); } function pixelValue(value) { return value + 'px'; } function durationValue(value) { return value + 's'; } function createALeaf() { var leafDiv = document.createElement('div'); var image = document.createElement('img'); image.src = 'assets/img/cash' + randomInteger(3, 7) + '.png'; leafDiv.style.top = "-100px"; leafDiv.style.left = pixelValue(randomInteger(0, width)); var spinAnimationName = (Math.random() < 0.5) ? 'clockwiseSpin' : 'counterclockwiseSpinAndFlip'; leafDiv.style.webkitAnimationName = 'fade, drop'; image.style.webkitAnimationName = spinAnimationName; var fadeAndDropDuration = durationValue(randomFloat(3, 9)); var spinDuration = durationValue(randomFloat(3, 7)); leafDiv.style.webkitAnimationDuration = fadeAndDropDuration + ', ' + fadeAndDropDuration; var leafDelay = durationValue(randomFloat(0, 0)); leafDiv.style.webkitAnimationDelay = leafDelay + ', ' + leafDelay; image.style.webkitAnimationDuration = spinDuration; leafDiv.appendChild(image); return leafDiv; } window.addEventListener('load', init, false);</script>
+  <script>
+    const NUMBER_OF_LEAVES = 15;
+    const width = window.screen.width;
+    function init() {
+      var container = document.getElementById("leafContainer");
+      for (var i = 0; i < NUMBER_OF_LEAVES; i++) {
+        container.appendChild(createALeaf());
+      }
+    }
+    function randomInteger(low, high) {
+      return low + Math.floor(Math.random() * (high - low));
+    }
+    function randomFloat(low, high) {
+      return low + Math.random() * (high - low);
+    }
+    function pixelValue(value) {
+      return value + "px";
+    }
+    function durationValue(value) {
+      return value + "s";
+    }
+    function createALeaf() {
+      var leafDiv = document.createElement("div");
+      var image = document.createElement("img");
+      image.src = "assets/img/cash" + randomInteger(3, 7) + ".png";
+      leafDiv.style.top = "-100px";
+      leafDiv.style.left = pixelValue(randomInteger(0, width));
+      var spinAnimationName =
+        Math.random() < 0.5
+          ? "clockwiseSpin"
+          : "counterclockwiseSpinAndFlip";
+      leafDiv.style.webkitAnimationName = "fade, drop";
+      image.style.webkitAnimationName = spinAnimationName;
+      var fadeAndDropDuration = durationValue(randomFloat(3, 9));
+      var spinDuration = durationValue(randomFloat(3, 7));
+      leafDiv.style.webkitAnimationDuration =
+        fadeAndDropDuration + ", " + fadeAndDropDuration;
+      var leafDelay = durationValue(randomFloat(0, 0));
+      leafDiv.style.webkitAnimationDelay = leafDelay + ", " + leafDelay;
+      image.style.webkitAnimationDuration = spinDuration;
+      leafDiv.appendChild(image);
+      return leafDiv;
+    }
+    window.addEventListener("load", init, false);
+  </script>
+    <script>
+      (function ($) {
+        // ---------Chart---------
+
+        // chart1
+        if (jQuery("#chart1").length > 0) {
+          var ctx = document.getElementById("chart1");
+          Chart.Tooltip.positioners.cursor = function (
+            chartElements,
+            coordinates
+          ) {
+            return coordinates;
+          };
+          var myChart = new Chart(ctx, {
+            type: 'pie',
+            data: {
+              labels: ["Migration Bridge", "Game Liquidity (Locked)", "Burnt", "Staking Rewards", "BSC Liquidity","ETH Liquidity","FTM Liquidity","MATIC Liquidity","AVAX Liquidity"],
+              datasets: [
+                {
+                  label: "#",
+                  data: [550946836008, 150000000000, 106218745546, 75000000000, 46140713798,44643488679,9175812571,9168485010,8705918388 ],
+                  backgroundColor: ["#efe943", "#800080", "#ff0000", "#e9734a", "#4fc489","#B28DC6","#0900FF","#98AD06","#ffffff"],
+                  borderWidth: 0,
+                  hoverOffset: false,
+                },
+              ],
+            },
+            options: {
+              legend: {
+                display: false,
+              },
+            },
+          });
+        }
+
+
+
+      })(jQuery);
+  </script>
 </body>
 
 

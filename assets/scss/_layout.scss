@@ -31,7 +31,7 @@
 --------------------------------------------------------------*/
 
 .overview {
-  border-bottom: 1px solid #222;
+
 .over-t{
   h2{
     font-size: 44px;
@@ -86,7 +86,6 @@
 		h2 {
 			font-size: 50px;
 			font-weight: 700;
-			text-shadow: 1px 1px 6px rgba($primary-color, 0.7);
 			text-transform: uppercase;
 			margin-bottom: 15px;
 			@media only screen and (max-width: 1199px) {
@@ -112,7 +111,7 @@
 		content: "";
 		background-color: rgba($primary-color, 0.3);
 		width: 2px;
-		box-shadow: 0px 0px 0px 5px rgba($primary-color, 0.1);
+		box-shadow: 0px 0px 0px 5px rgba($primary-color, 0.2);
 		height: calc(100% - 70px);
 		transform: translateX(-50%);
 		position: absolute;
@@ -149,8 +148,8 @@
 	}
 
 	.timeline-content {
-		background-color: rgba(0, 0, 0, 0.32);
-		box-shadow: inset 0 0 20px rgba($primary-color, 1);
+		background-color: #fff;
+		// box-shadow: inset 0 0 20px rgba($primary-color, 1);
 		padding: 30px 40px;
 		border-radius: 30px;
 		display: block;
@@ -188,7 +187,7 @@
 		font-weight: 600;
 		text-transform: uppercase;
 		margin: 0 0 18px;
-		color: #fff;
+		color: #000;
 		@media only screen and (max-width: 767px) {
 			font-size: 21px;
 		}
@@ -201,8 +200,9 @@
 			padding: 0;
 			li {
 				display: flex;
-				color: $title-color;
-				font-size: 14px;
+				color: #393838;
+        font-weight: 600;
+				font-size: 15px;
 				&:not(:last-child) {
 					margin-bottom: 16px;
 				}
@@ -213,7 +213,7 @@
 					min-width: 20px;
 					margin-right: 2px;
 					position: relative;
-					color: $secondary-color;
+					color: $primary-color;
 					font-weight: bold;
 					top: 2px;
 					&.lni-checkmark-circle {

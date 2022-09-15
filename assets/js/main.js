@@ -2,7 +2,7 @@
 	window.onload = function () {
 		window.setTimeout(fadeout, 500);
 	};
-  function fadeout() {
+	function fadeout() {
 		document.querySelector(".page-loader").style.opacity = "0";
 		document.querySelector(".page-loader").style.display = "none";
 	}
@@ -25,10 +25,7 @@
 		}
 	};
 
-
-
-
-  var pageLink = document.querySelectorAll(".page-scroll");
+	var pageLink = document.querySelectorAll(".page-scroll");
 	pageLink.forEach((elem) => {
 		elem.addEventListener("click", (e) => {
 			e.preventDefault();
@@ -74,6 +71,7 @@
 		navbarToggler.classList.toggle("active");
 	});
 
-
+ // WOW active
+ new WOW().init();
 
 })();

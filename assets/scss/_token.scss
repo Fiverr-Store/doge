@@ -1,0 +1,118 @@
+.yellow{
+  background-color: #FFF714;
+}
+.purple{
+background-color: #800080;
+}
+.red{
+background-color: #FF0000;
+}
+.orange{
+background-color: #E9734A;
+}
+.green{
+background-color: #53906A;
+}
+
+.lady{
+  background-color: #B28DC6;
+}
+.blue{
+  background-color: #0900FF;
+}
+
+.penut{
+  background-color: #98AD06;
+}
+.light-b{
+  background-color: #fff;
+}
+
+
+
+
+
+$yellow:#000;
+.token-mics{
+background-color: lighten($color: $primary-color, $amount: 10%);
+.sec-title{
+  text-align: center;
+  h2{
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    @media only screen and (max-width: 1199px) {
+      font-size: 45px;
+    }
+    @media only screen and (max-width: 991px) {
+      font-size: 40px;
+    }
+    @media only screen and (max-width: 767px) {
+      font-size: 33px;
+      margin-bottom: 5px;
+    }
+    @media only screen and (max-width: 482px) {
+      font-size: 27px;
+    }
+  }
+}
+  .total{
+    text-align: center;
+    color: $yellow;
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    line-height: 1.4;
+    @media only screen and (max-width: 767px) {
+     font-size: 17px;
+     margin-bottom: 22px;
+    }
+  }
+
+}
+
+
+.chart-list{
+  padding-top: 50px;
+    .chart-wrap{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-left: -10px;
+      margin-right: -10px;
+    }
+    .chart-point{
+      margin-left: 10px;
+      margin-right: 10px;
+      text-align: center;
+      max-width: 300px;
+      background-color: $main-color;
+      padding: 20px 15px;
+      margin-bottom: 22px;
+      border-radius: 7px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      span{
+        display: inline-flex;
+        width: 20px;
+        height: 20px;
+        border-radius: 2px;
+        margin-bottom: 10px;
+      }
+      p{
+        font-size: 14px;
+        line-height: 1.2;
+        margin-bottom: 16px;
+        font-weight: 600;
+      }
+      h2{
+        font-weight: 600;
+        font-size: 14px;
+        margin-top: auto;
+        color: #fff;
+      }
+    }
+  }

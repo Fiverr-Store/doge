@@ -41,6 +41,7 @@ body {
 }
 .section-padding {
   padding: 80px 0px;
+  border-bottom: 1px solid #222;
 }
 @media only screen and (max-width: 991px) {
   .section-padding {
@@ -750,9 +751,6 @@ h6 a {
 /*--------------------------------------------------------------
 # arts
 --------------------------------------------------------------*/
-.overview {
-  border-bottom: 1px solid #222;
-}
 .overview .over-t h2 {
   font-size: 44px;
   font-weight: 700;
@@ -818,7 +816,6 @@ h6 a {
 .roadmap-section .sec-title h2 {
   font-size: 50px;
   font-weight: 700;
-  text-shadow: 1px 1px 6px rgba(194, 100, 63, 0.7);
   text-transform: uppercase;
   margin-bottom: 15px;
 }
@@ -851,8 +848,8 @@ h6 a {
   content: "";
   background-color: rgba(194, 100, 63, 0.3);
   width: 2px;
-  -webkit-box-shadow: 0px 0px 0px 5px rgba(194, 100, 63, 0.1);
-          box-shadow: 0px 0px 0px 5px rgba(194, 100, 63, 0.1);
+  -webkit-box-shadow: 0px 0px 0px 5px rgba(194, 100, 63, 0.2);
+          box-shadow: 0px 0px 0px 5px rgba(194, 100, 63, 0.2);
   height: calc(100% - 70px);
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -888,9 +885,7 @@ h6 a {
   right: -17px;
 }
 .main-timeline .timeline-content {
-  background-color: rgba(0, 0, 0, 0.32);
-  -webkit-box-shadow: inset 0 0 20px #c2643f;
-          box-shadow: inset 0 0 20px #c2643f;
+  background-color: #fff;
   padding: 30px 40px;
   border-radius: 30px;
   display: block;
@@ -929,7 +924,7 @@ h6 a {
   font-weight: 600;
   text-transform: uppercase;
   margin: 0 0 18px;
-  color: #fff;
+  color: #000;
 }
 @media only screen and (max-width: 767px) {
   .main-timeline .title {
@@ -945,8 +940,9 @@ h6 a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #fff;
-  font-size: 14px;
+  color: #393838;
+  font-weight: 600;
+  font-size: 15px;
 }
 .main-timeline .list-road ul li:not(:last-child) {
   margin-bottom: 16px;
@@ -957,7 +953,7 @@ h6 a {
   min-width: 20px;
   margin-right: 2px;
   position: relative;
-  color: #FFF800;
+  color: #C2643F;
   font-weight: bold;
   top: 2px;
 }
@@ -1314,6 +1310,147 @@ footer .footer-links ul li a {
 }
 footer .footer-links ul li a:hover {
   color: #C2643F;
+}
+
+.yellow {
+  background-color: #FFF714;
+}
+
+.purple {
+  background-color: #800080;
+}
+
+.red {
+  background-color: #FF0000;
+}
+
+.orange {
+  background-color: #E9734A;
+}
+
+.green {
+  background-color: #53906A;
+}
+
+.lady {
+  background-color: #B28DC6;
+}
+
+.blue {
+  background-color: #0900FF;
+}
+
+.penut {
+  background-color: #98AD06;
+}
+
+.light-b {
+  background-color: #fff;
+}
+
+.token-mics {
+  background-color: #ce8366;
+}
+.token-mics .sec-title {
+  text-align: center;
+}
+.token-mics .sec-title h2 {
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 1199px) {
+  .token-mics .sec-title h2 {
+    font-size: 45px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .token-mics .sec-title h2 {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .token-mics .sec-title h2 {
+    font-size: 33px;
+    margin-bottom: 5px;
+  }
+}
+@media only screen and (max-width: 482px) {
+  .token-mics .sec-title h2 {
+    font-size: 27px;
+  }
+}
+.token-mics .total {
+  text-align: center;
+  color: #000;
+  font-size: 18px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+@media only screen and (max-width: 767px) {
+  .token-mics .total {
+    font-size: 17px;
+    margin-bottom: 22px;
+  }
+}
+
+.chart-list {
+  padding-top: 50px;
+}
+.chart-list .chart-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.chart-list .chart-point {
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  max-width: 300px;
+  background-color: #000000;
+  padding: 20px 15px;
+  margin-bottom: 22px;
+  border-radius: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.chart-list .chart-point span {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+.chart-list .chart-point p {
+  font-size: 14px;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+.chart-list .chart-point h2 {
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: auto;
+  color: #fff;
 }
 
 .moneybox {
