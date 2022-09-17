@@ -239,8 +239,7 @@ h6 a {
 .scroll-top {
   width: 35px;
   height: 35px;
-  -webkit-box-shadow: inset 0 0 8px #c2643f;
-          box-shadow: inset 0 0 8px #c2643f;
+  background-color: #C2643F;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -431,6 +430,10 @@ h6 a {
   .navbar .navbar-nav .nav-item a {
     display: inline-block;
   }
+}
+.navbar .navbar-nav .nav-item .lni-shield {
+  color: greenyellow;
+  font-size: 16px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .navbar .navbar-collapse {
@@ -1372,8 +1375,8 @@ footer .footer-links ul li a:hover {
 .token-mics .total {
   text-align: center;
   color: #000;
-  font-size: 18px;
-  margin-bottom: 30px;
+  font-size: 22px;
+  margin-bottom: 40px;
   font-weight: bold;
   line-height: 1.4;
 }
@@ -1384,30 +1387,31 @@ footer .footer-links ul li a:hover {
   }
 }
 
-.chart-list {
-  padding-top: 50px;
+.chart-box {
+  background-color: #3A1E12;
+  -webkit-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.12);
+  padding: 30px 20px;
+  border-radius: 14px;
+  text-align: center;
 }
-.chart-list .chart-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-left: -10px;
-  margin-right: -10px;
+.chart-box canvas {
+  width: 100%;
+}
+.chart-box h4 {
+  font-size: 22px;
+  line-height: 1.3;
+  margin-bottom: 16px;
+}
+
+.chart-list {
+  padding-top: 40px;
 }
 .chart-list .chart-point {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
-  max-width: 300px;
-  background-color: #000000;
-  padding: 20px 15px;
-  margin-bottom: 22px;
-  border-radius: 7px;
+  max-width: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1418,6 +1422,11 @@ footer .footer-links ul li a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.chart-list .chart-point:not(:last-child) {
+  margin-bottom: 12px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #C2643F;
 }
 .chart-list .chart-point span {
   display: -webkit-inline-box;
@@ -1431,14 +1440,364 @@ footer .footer-links ul li a:hover {
 .chart-list .chart-point p {
   font-size: 14px;
   line-height: 1.2;
-  margin-bottom: 16px;
+  margin-bottom: 6px;
   font-weight: 600;
+  color: #b1b0b0;
+  font-weight: 700;
 }
 .chart-list .chart-point h2 {
-  font-weight: 600;
-  font-size: 14px;
+  font-weight: 700;
+  font-size: 15px;
   margin-top: auto;
   color: #fff;
+}
+
+.bix-text {
+  padding-top: 40px;
+  text-align: center;
+}
+@media only screen and (max-width: 767px) {
+  .bix-text {
+    padding-top: 30px;
+  }
+}
+.bix-text h3 {
+  font-weight: 700;
+  color: #000;
+  font-size: 40px;
+  text-shadow: 0px 4px 18px rgba(0, 0, 0, 0.34);
+}
+@media only screen and (max-width: 767px) {
+  .bix-text h3 {
+    font-size: 30px;
+  }
+}
+
+/*--------------------------------------------------------------
+# token-info
+--------------------------------------------------------------*/
+.token-info {
+  background-color: #ce8366;
+}
+.token-info .sec-title {
+  text-align: center;
+}
+.token-info .sec-title h2 {
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+@media only screen and (max-width: 1199px) {
+  .token-info .sec-title h2 {
+    font-size: 45px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .token-info .sec-title h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .token-info .sec-title h2 {
+    font-size: 33px;
+    margin-bottom: 25px;
+  }
+}
+@media only screen and (max-width: 482px) {
+  .token-info .sec-title h2 {
+    font-size: 27px;
+  }
+}
+.token-info .bu-box {
+  background-color: #000000;
+  padding: 30px 20px;
+  border-radius: 14px;
+  text-align: center;
+}
+.token-info .bu-box h3 {
+  font-size: 26px;
+}
+@media only screen and (max-width: 767px) {
+  .token-info .bu-box h3 {
+    font-size: 24px;
+  }
+}
+.token-info .buy-btns-network {
+  padding-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+@media only screen and (max-width: 767px) {
+  .token-info .buy-btns-network {
+    padding-top: 8px;
+  }
+}
+.token-info .buy-btns-network a {
+  margin-left: 8px;
+  margin-right: 8px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 7px 16px;
+  margin-top: 15px;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+  width: 100%;
+  max-width: 100px;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.token-info .buy-btns-network a img {
+  height: 38px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-bottom: 5px;
+}
+.token-info .buy-btns-network a span {
+  font-size: 15px;
+  color: #000000;
+  font-weight: 600;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.token-info .buy-btns-network a:hover {
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(194, 100, 63, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(194, 100, 63, 0.5);
+}
+.token-info .buy-btns-network a:hover span {
+  color: #C2643F;
+}
+.token-info .con-boz {
+  border: 1px solid rgba(194, 100, 63, 0.8);
+  -webkit-box-shadow: inset 0 0 15px #C2643F;
+          box-shadow: inset 0 0 15px #C2643F;
+  padding: 30px 30px;
+  background-color: #000000;
+  border-radius: 15px;
+  overflow: hidden;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+@media only screen and (max-width: 767px) {
+  .token-info .con-boz {
+    padding: 30px 23px;
+  }
+}
+.token-info .clip-board-box {
+  position: relative;
+  border: 1px solid rgba(253, 151, 48, 0.5);
+  background-color: rgba(194, 100, 63, 0.1);
+  display: inline-block;
+  padding: 10px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.token-info .clip-board-box .text-line {
+  font-weight: 500;
+  color: #eee;
+  margin-right: 5px;
+}
+.token-info .btn-cun {
+  position: absolute;
+  top: 0px;
+  right: 0;
+}
+.token-info .copy-button {
+  height: 46px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fd9730;
+  outline: none;
+  border: 0;
+  color: #fff;
+  font-size: 16px;
+  padding: 3px 12px;
+  border-radius: 0;
+  border-radius: 6px;
+}
+.token-info .tip {
+  background-color: #263646;
+  padding: 0 14px;
+  line-height: 27px;
+  position: absolute;
+  border-radius: 4px;
+  z-index: 100;
+  color: #fff;
+  font-size: 12px;
+  -webkit-animation-name: tip;
+  animation-name: tip;
+  -webkit-animation-duration: 0.6s;
+  animation-duration: 0.6s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.token-info .tip:before {
+  content: "";
+  background-color: #263646;
+  height: 10px;
+  width: 10px;
+  display: block;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: -4px;
+  left: 17px;
+}
+.token-info #copied_tip {
+  -webkit-animation-name: come_and_leave;
+  animation-name: come_and_leave;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  bottom: -35px;
+  left: -18px;
+}
+@media only screen and (max-width: 480px) {
+  .token-info #copied_tip {
+    left: -20px;
+  }
+}
+.token-info .text-line {
+  font-size: 13px;
+}
+.token-info .con-txt {
+  text-align: start;
+  margin-top: 26px;
+  max-width: 190px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px 15px;
+}
+.token-info .con-txt p {
+  font-size: 16px;
+  color: #000000;
+  font-weight: 500;
+}
+.token-info .con-txt p span {
+  display: inline-block;
+  color: #C2643F;
+  font-weight: 700;
+  margin-right: 4px;
+}
+
+/*--------------------------------------------------------------
+# safu
+--------------------------------------------------------------*/
+.safu {
+  background-color: #000;
+}
+.safu .sec-title {
+  text-align: center;
+}
+.safu .sec-title h2 {
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+@media only screen and (max-width: 1199px) {
+  .safu .sec-title h2 {
+    font-size: 45px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .safu .sec-title h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .safu .sec-title h2 {
+    font-size: 33px;
+    margin-bottom: 25px;
+  }
+}
+@media only screen and (max-width: 482px) {
+  .safu .sec-title h2 {
+    font-size: 27px;
+  }
+}
+.safu .safu-list {
+  background-color: #fff;
+  padding: 20px 20px;
+  border-radius: 14px;
+}
+.safu .safu-list h3 {
+  font-size: 25px;
+  color: #000;
+  margin-bottom: 18px;
+}
+.safu .safu-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.safu .safu-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.safu .safu-list li:not(:last-child) {
+  margin-bottom: 12px;
+}
+.safu .safu-list li i {
+  background-color: greenyellow;
+  color: #000;
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+.safu .safu-list li span {
+  font-weight: 700;
+  color: #222;
+  line-height: 1.4;
 }
 
 .moneybox {
