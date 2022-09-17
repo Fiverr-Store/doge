@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap");
 /*--------------------------------------------------------------
 # base
 --------------------------------------------------------------*/
@@ -1304,7 +1305,7 @@ footer .footer-links ul li a:hover {
 }
 
 .yellow {
-  background-color: #FFF714;
+  background-color: #fff714;
 }
 
 .purple {
@@ -1312,27 +1313,27 @@ footer .footer-links ul li a:hover {
 }
 
 .red {
-  background-color: #FF0000;
+  background-color: #ff0000;
 }
 
 .orange {
-  background-color: #E9734A;
+  background-color: #e9734a;
 }
 
 .green {
-  background-color: #53906A;
+  background-color: #53906a;
 }
 
 .lady {
-  background-color: #B28DC6;
+  background-color: #b28dc6;
 }
 
 .blue {
-  background-color: #0900FF;
+  background-color: #0900ff;
 }
 
 .penut {
-  background-color: #98AD06;
+  background-color: #98ad06;
 }
 
 .light-b {
@@ -1388,7 +1389,7 @@ footer .footer-links ul li a:hover {
 }
 
 .chart-box {
-  background-color: #3A1E12;
+  background-color: #3a1e12;
   -webkit-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.12);
           box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.12);
   padding: 30px 20px;
@@ -1398,10 +1399,26 @@ footer .footer-links ul li a:hover {
 .chart-box canvas {
   width: 100%;
 }
+.chart-box h2 {
+  font-size: 34px;
+  margin-bottom: 16px;
+}
+@media only screen and (max-width: 767px) {
+  .chart-box h2 {
+    font-size: 28px;
+    margin-bottom: 13px;
+  }
+}
 .chart-box h4 {
   font-size: 22px;
   line-height: 1.3;
-  margin-bottom: 16px;
+  margin-bottom: 15px;
+  opacity: 0.7;
+}
+@media only screen and (max-width: 767px) {
+  .chart-box h4 {
+    font-size: 20px;
+  }
 }
 
 .chart-list {
@@ -1462,14 +1479,33 @@ footer .footer-links ul li a:hover {
   }
 }
 .bix-text h3 {
-  font-weight: 700;
+  font-family: "Bungee Spice", cursive;
   color: #000;
-  font-size: 40px;
-  text-shadow: 0px 4px 18px rgba(0, 0, 0, 0.34);
+  font-size: 52px;
+  display: inline-block;
+  background-color: #000;
+  padding: 3px 4px;
+  border-radius: 2px;
+  line-height: 1.1;
+}
+@media only screen and (max-width: 1399px) {
+  .bix-text h3 {
+    font-size: 44px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .bix-text h3 {
+    font-size: 38px;
+  }
 }
 @media only screen and (max-width: 767px) {
   .bix-text h3 {
     font-size: 30px;
+  }
+}
+@media only screen and (max-width: 482px) {
+  .bix-text h3 {
+    font-size: 25px;
   }
 }
 
@@ -1516,12 +1552,23 @@ footer .footer-links ul li a:hover {
   border-radius: 14px;
   text-align: center;
 }
+.token-info .bu-box .bu-logo {
+  height: 80px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-bottom: 6px;
+}
+@media only screen and (max-width: 767px) {
+  .token-info .bu-box .bu-logo {
+    height: 70px;
+  }
+}
 .token-info .bu-box h3 {
-  font-size: 26px;
+  font-size: 28px;
 }
 @media only screen and (max-width: 767px) {
   .token-info .bu-box h3 {
-    font-size: 24px;
+    font-size: 25px;
   }
 }
 .token-info .buy-btns-network {
@@ -1728,12 +1775,45 @@ footer .footer-links ul li a:hover {
 }
 .safu .sec-title {
   text-align: center;
+  margin-bottom: 40px;
+}
+@media only screen and (max-width: 991px) {
+  .safu .sec-title {
+    margin-bottom: 30px;
+  }
 }
 .safu .sec-title h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 50px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 40px;
+}
+.safu .sec-title h2 span {
+  line-height: 1.2;
+}
+.safu .sec-title h2 i {
+  color: greenyellow;
+  font-size: 38px;
+  line-height: 1.2;
+  margin-left: 4px;
+}
+@media only screen and (max-width: 991px) {
+  .safu .sec-title h2 i {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 482px) {
+  .safu .sec-title h2 i {
+    font-size: 26px;
+  }
 }
 @media only screen and (max-width: 1199px) {
   .safu .sec-title h2 {
@@ -1743,18 +1823,16 @@ footer .footer-links ul li a:hover {
 @media only screen and (max-width: 991px) {
   .safu .sec-title h2 {
     font-size: 40px;
-    margin-bottom: 30px;
   }
 }
 @media only screen and (max-width: 767px) {
   .safu .sec-title h2 {
-    font-size: 33px;
-    margin-bottom: 25px;
+    font-size: 36px;
   }
 }
 @media only screen and (max-width: 482px) {
   .safu .sec-title h2 {
-    font-size: 27px;
+    font-size: 30px;
   }
 }
 .safu .safu-list {
@@ -1766,6 +1844,11 @@ footer .footer-links ul li a:hover {
   font-size: 25px;
   color: #000;
   margin-bottom: 18px;
+}
+@media only screen and (max-width: 482px) {
+  .safu .safu-list h3 {
+    font-size: 22px;
+  }
 }
 .safu .safu-list ul {
   list-style: none;
