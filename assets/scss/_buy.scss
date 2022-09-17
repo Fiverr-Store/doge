@@ -311,3 +311,65 @@
 		}
 	}
 }
+
+
+/*--------------------------------------------------------------
+# myModal
+--------------------------------------------------------------*/
+.myModal{
+  .modal-content{
+    background-color: #111;
+    background-image: url('../img/bg/pop.png');
+    background-size: cover;
+    background-position: center;
+    border: 0;
+    border-radius: 14px;
+    text-align: center;
+  }
+  .modal-body{
+    position: relative;
+    padding: 20px 20px;
+    .btn-close{
+      background-image: none;
+      color: #fff;
+      position: relative;
+      top: -8px;
+      font-size: 15px;
+    }
+    p{
+      font-size: 15px;
+      color: #fff;
+      margin-bottom: 16px;
+      margin-top: 5px;
+    }
+  }
+  .chain{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    a{
+      &:not(:last-child) {
+      margin-right: 8px;
+      }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgba(#fff, 1);
+      padding: 8px 10px;
+      border-radius: 8px;
+     min-width: 130px;
+     line-height: 1.2;
+      img{
+        width: 30px;
+        height: 30px;
+        margin-bottom: 8px;
+      }
+      span{
+        color: #000;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 1.2;
+      }
+    }
+  }
+}

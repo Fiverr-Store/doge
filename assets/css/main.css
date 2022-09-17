@@ -1883,6 +1883,76 @@ footer .footer-links ul li a:hover {
   line-height: 1.4;
 }
 
+/*--------------------------------------------------------------
+# myModal
+--------------------------------------------------------------*/
+.myModal .modal-content {
+  background-color: #111;
+  background-image: url("../img/bg/pop.png");
+  background-size: cover;
+  background-position: center;
+  border: 0;
+  border-radius: 14px;
+  text-align: center;
+}
+.myModal .modal-body {
+  position: relative;
+  padding: 20px 20px;
+}
+.myModal .modal-body .btn-close {
+  background-image: none;
+  color: #fff;
+  position: relative;
+  top: -8px;
+  font-size: 15px;
+}
+.myModal .modal-body p {
+  font-size: 15px;
+  color: #fff;
+  margin-bottom: 16px;
+  margin-top: 5px;
+}
+.myModal .chain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+.myModal .chain a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  padding: 8px 10px;
+  border-radius: 8px;
+  min-width: 130px;
+  line-height: 1.2;
+}
+.myModal .chain a:not(:last-child) {
+  margin-right: 8px;
+}
+.myModal .chain a img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 8px;
+}
+.myModal .chain a span {
+  color: #000;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.2;
+}
+
 .moneybox {
   width: 100%;
   height: 100%;

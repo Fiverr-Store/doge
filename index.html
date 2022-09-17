@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
   <link rel="stylesheet" href="assets/css/LineIcons.3.0.css" />
   <link rel="stylesheet" href="assets/css/animate.css" />
-  <link rel="stylesheet" href="assets/css/main.css?v=1938" />
+  <link rel="stylesheet" href="assets/css/main.css?v=222" />
 </head>
 <body>
   <!--[if lte IE 9]>
@@ -45,7 +45,7 @@
               <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
                 <ul id="nav" class="navbar-nav nav-center">
                   <li class="nav-item">
-                    <a  href="#"> Home </a>
+                    <a href="#"> Home </a>
                   </li>
                   <li class="nav-item">
                     <a class="page-scroll" href="#tokenomics"> Tokenomics </a>
@@ -443,7 +443,7 @@
 
         <div class="col-lg-6">
           <div class="bu-box wow fadeInLeft" data-wow-delay=".4s">
-             <img src="assets/img/buy/bnb-bnb-logo.svg" class="bu-logo" alt="">
+            <img src="assets/img/buy/bnb-bnb-logo.svg" class="bu-logo" alt="">
             <h3> Binance Smart Chain </h3>
             <div class="buy-btns-network">
               <a href="#!" target="_blank">
@@ -574,9 +574,9 @@
           </div><!-- /.safu-list -->
         </div><!-- /.col-lg-5 -->
         <div class="col-lg-5">
-        <div class="wow fadeInRight" data-bs-toggle=".5s">
-          <img src="assets/img/hero/1.png" class="img-fluid" alt="">
-        </div>
+          <div class="wow fadeInRight" data-bs-toggle=".5s">
+            <img src="assets/img/hero/1.png" class="img-fluid" alt="">
+          </div>
         </div><!-- /.col-lg-5 -->
       </div><!-- /.row -->
 
@@ -621,20 +621,31 @@
   </div><!-- /.page-loader -->
 
   <!-- Modal -->
-  <div class="modal fade" id="MyModal">
-    <div class="modal-dialog">
-      <div class="modal-content modal-dialog-centered">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
+  <div class="modal fade myModal" data-bs-backdrop="static" id="MyModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
         <div class="modal-body">
-          <p>Display Popup only once when page load with cookie </p>
+          <div class="text-end">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> <i class="lni lni-close"></i> </button>
+          </div>
+          <p>
+            We are launching through Pink Sale on both the Binance Smart Chain & Doge Chain networks. Our Fairlaunch goes live on
+            the 9th October @ 20:00. You can participate via the chain of your choice from the links below. DON'T MISS IT!
+          </p>
+          <div class="chain">
+            <a href="https://www.pinksale.finance/launchpad/0x1b885BDEE1B4e1A33673128B4931842A89A9f0EA?chain=BSC" target="_blank">
+            <img src="assets/img/buy/bnb-bnb-logo.svg" alt="">
+            <span>   Binance Smart <br> Chain </span>
+             </a>
+            <a href="https://www.pinksale.finance/launchpad/0xb58fBcA948D226E9F76442502dbA8A1e78b8fffa?chain=DogeChain"
+              target="_blank">
+             <img src="assets/img/buy/dogecoin-doge-logo.svg" alt="">
+             <span> Doge Chain </span>
+            </a>
+          </div><!-- /.chain -->
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
+
       </div>
     </div>
   </div>
@@ -798,12 +809,13 @@
   </script>
 
   <script>
-    // $(document).ready(function () {
-    //   if (document.cookie.indexOf("FooBar=true") == -1) {
-    //     document.cookie = "FooBar=true; max-age=86400"; // 86400: seconds in a day
-    //     $('#MyModal').modal('show');
-    //   }
-    // });
+    $(document).ready(function () {
+      if (document.cookie.indexOf("FooBar=true") == -1) {
+        document.cookie = "FooBar=true; max-age=86400"; // 86400: seconds in a day
+        $('#MyModal').modal('show');
+      }
+
+    });
   </script>
 
 </body>

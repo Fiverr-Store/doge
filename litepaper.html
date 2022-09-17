@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <title> Bugatti DOGE - HOME </title>
+  <title> Bugatti DOGE - LitePaper </title>
   <meta name="description" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- Favicons -->
@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
   <link rel="stylesheet" href="assets/css/LineIcons.3.0.css" />
   <link rel="stylesheet" href="assets/css/animate.css" />
-  <link rel="stylesheet" href="assets/css/main.css?v=198" />
+  <link rel="stylesheet" href="assets/css/main.css?v=222" />
 </head>
 <body>
   <!--[if lte IE 9]>
@@ -59,7 +59,7 @@
                     <a class="active" href="litepaper.html"> Litepaper </a>
                   </li>
                   <li class="nav-item">
-                    <a  href="/#safu"> SAFU <i class="lni lni-shield"></i> </>
+                    <a href="/#safu"> SAFU <i class="lni lni-shield"></i> </>
                   </li>
                 </ul>
                 <ul id="nav" class="navbar-nav ms-auto social">
@@ -136,31 +136,50 @@
     <div class="lds-dual-ring"></div>
   </div><!-- /.page-loader -->
 
-<!-- Modal -->
-<div class="modal fade" id="MyModal">
-  <div class="modal-dialog">
-    <div class="modal-content modal-dialog-centered">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <p>Display Popup  only once when page load with cookie </p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+
+  <!-- Modal -->
+  <div class="modal fade myModal" data-bs-backdrop="static" id="MyModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <div class="modal-body">
+          <div class="text-end">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> <i class="lni lni-close"></i> </button>
+          </div>
+          <p>
+            We are launching through Pink Sale on both the Binance Smart Chain & Doge Chain networks. Our Fairlaunch goes live on
+            the 9th October @ 20:00. You can participate via the chain of your choice from the links below. DON'T MISS IT!
+          </p>
+          <div class="chain">
+            <a href="https://www.pinksale.finance/launchpad/0x1b885BDEE1B4e1A33673128B4931842A89A9f0EA?chain=BSC" target="_blank">
+            <img src="assets/img/buy/bnb-bnb-logo.svg" alt="">
+            <span>   Binance Smart <br> Chain </span>
+             </a>
+            <a href="https://www.pinksale.finance/launchpad/0xb58fBcA948D226E9F76442502dbA8A1e78b8fffa?chain=DogeChain"
+              target="_blank">
+             <img src="assets/img/buy/dogecoin-doge-logo.svg" alt="">
+             <span> Doge Chain </span>
+            </a>
+          </div><!-- /.chain -->
+        </div>
+
       </div>
     </div>
   </div>
-</div>
 
-
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/wow.min.js"></script>
-  <script src="assets/js/chart.min.js"></script>
   <script src="assets/js/main.js"></script>
+  <script>
+    $(document).ready(function () {
+      if (document.cookie.indexOf("FooBar=true") == -1) {
+        document.cookie = "FooBar=true; max-age=86400"; // 86400: seconds in a day
+        $('#MyModal').modal('show');
+      }
 
+    });
+  </script>
 
 
 
