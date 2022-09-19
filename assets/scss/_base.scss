@@ -316,3 +316,11 @@ h6 a {
       transform: rotate(360deg);
     }
   }
+
+  /*--------------------------------------------------------------
+  # custom-tooltip
+  --------------------------------------------------------------*/
+  .custom-tooltip{
+   color: $secondary-color;
+   background-color: $secondary-color;
+  }

@@ -333,6 +333,14 @@ h6 a {
   }
 }
 /*--------------------------------------------------------------
+# custom-tooltip
+--------------------------------------------------------------*/
+.custom-tooltip {
+  color: #FFF800;
+  background-color: #FFF800;
+}
+
+/*--------------------------------------------------------------
 # navbar
 --------------------------------------------------------------*/
 .navbar-area {
@@ -552,7 +560,7 @@ h6 a {
 }
 @media only screen and (max-width: 991px) {
   .social {
-    padding-top: 12px;
+    padding-top: 0px;
   }
 }
 .social .btn-connect {
@@ -578,7 +586,7 @@ h6 a {
 @media only screen and (max-width: 991px) {
   .social .btn-connect {
     margin-left: 0;
-    margin-top: 2px;
+    margin-top: 0px;
   }
 }
 .social .btn-connect:hover {
@@ -757,6 +765,11 @@ h6 a {
 /*--------------------------------------------------------------
 # arts
 --------------------------------------------------------------*/
+@media only screen and (max-width: 767px) {
+  .overview {
+    text-align: center;
+  }
+}
 .overview .over-t h2 {
   font-size: 44px;
   font-weight: 700;
