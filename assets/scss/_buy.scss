@@ -221,7 +221,7 @@
 # safu
 --------------------------------------------------------------*/
 .safu {
-	background-color: #000;
+  background-color: lighten($color: $primary-color, $amount: 10%);
 	.sec-title {
 		text-align: center;
 
@@ -269,12 +269,12 @@
 	}
 
 	.safu-list {
-		background-color: #fff;
+		background-color: #000;
 		padding: 20px 20px;
 		border-radius: 14px;
 		h3 {
 			font-size: 25px;
-			color: #000;
+			color: #fff;
 			margin-bottom: 18px;
 			@media only screen and (max-width: 482px) {
 				font-size: 22px;
@@ -287,9 +287,9 @@
 		}
 		li {
 			display: flex;
-			align-items: center;
+
 			&:not(:last-child) {
-				margin-bottom: 12px;
+				margin-bottom: 15px;
 			}
 			i {
 				background-color: greenyellow;
@@ -301,14 +301,24 @@
 				line-height: 30px;
 				border-radius: 6px;
 				margin-right: 10px;
+        position: relative;
 			}
 			span {
 				font-weight: 700;
-				color: #222;
+				color: #eee;
 				line-height: 1.4;
 			}
+      a{
+        text-decoration: underline;
+        color: $primary-color;
+      }
 		}
 	}
+
+  .tweet-emb{
+
+  }
+
 }
 
 /*--------------------------------------------------------------
